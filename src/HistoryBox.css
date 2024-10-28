@@ -3,11 +3,13 @@
 }
 
 .history-title {
+  color: #000;
   font-weight: bold;
   font-size: 24px;
 }
 
 .history-box {
+  color: #000;
   border: 1px solid #333; /* Dark border around the box */
   padding: 16px; /* Padding inside the box */
   display: inline-block; /* Keep it inline and centered */

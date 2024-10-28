@@ -17,6 +17,9 @@ function App() {
         from: prevCount,
         to: newCount,
       });
+      if (historyData.length > 50) {
+        historyData.shift();
+      }
       return newCount;
     });
   }
@@ -31,7 +34,6 @@ function App() {
     if (redoData) {
       historyData.push({ ...redoData });
       setCount(redoData.to);
-      redoData = null;
     }
   }
 
