@@ -1,0 +1,29 @@
+.history-container {
+  text-align: center;
+}
+
+.history-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.history-box {
+  border: 1px solid #333; /* Dark border around the box */
+  padding: 16px; /* Padding inside the box */
+  display: inline-block; /* Keep it inline and centered */
+  text-align: left; /* Left-align text inside the box */
+  width: 40%; /* Make it 30% of the container width */
+  min-width: 200px; /* Ensure minimum width */
+  max-width: 1000px; /* Limit maximum width */
+  height: 200px; /* Fixed height for scrollable content */
+  overflow-y: auto; /* Enables vertical scrolling when content overflows */
+  background-color: #ffffff; /* White background for contrast */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}

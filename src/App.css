@@ -1,0 +1,80 @@
+/* App.css */
+
+/* Center the app content vertically and horizontally, with a column layout */
+body, .app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default body margin */
+  background-color: #f5f5f5; /* Light background for contrast */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+/* Main title styling */
+.app-title {
+  margin-bottom: 24px; /* Space below the title */
+  color: #333; /* Dark color for text */
+}
+
+/* Container for control elements, arranged vertically with spacing */
+.control-panel {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  gap: 20px; /* Space between undo/redo and counter group */
+  margin-bottom: 20px; /* Space below the panel */
+  width: 100%;
+  max-width: 400px; /* Limit width for a compact layout */
+}
+
+/* Group container for Undo and Redo buttons */
+.button-group {
+  display: flex;
+  gap: 10px; /* Space between Undo and Redo buttons */
+}
+
+/* Group container for counter buttons and display */
+.counter-group {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  gap: 10px; /* Space between each button and display */
+  padding: 20px; /* Inner padding for the card effect */
+  border: 1px solid #ddd; /* Light border for card */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Base button styling for Undo/Redo and counter buttons */
+.action-button,
+.counter-button {
+  padding: 10px 16px; /* Padding for button size */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Slight rounding for button corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  background-color: #e0e0e0; /* Light gray button color */
+  transition: background-color 0.2s; /* Smooth color transition */
+}
+
+/* Hover effect for all buttons */
+.action-button:hover,
+.counter-button:hover {
+  background-color: #d0d0d0; /* Darker gray on hover */
+}
+
+/* Active (clicked) effect for buttons */
+.action-button:active,
+.counter-button:active {
+  background-color: #c0c0c0; /* Darker gray on active state */
+}
+
+/* Styling for the counter display (the number) */
+.counter-display {
+  font-size: 20px; /* Larger font size for visibility */
+  font-weight: bold; /* Bold font for emphasis */
+  padding: 10px 16px; /* Padding for visual balance with buttons */
+  border-radius: 4px; /* Rounded corners */
+  color: #333; /* Dark text color */
+  background-color: #f0f0f0; /* Light gray background */
+}
